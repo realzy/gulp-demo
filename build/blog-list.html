@@ -1,0 +1,60 @@
+<!DOCTYPE>
+<html lang="zh-CN">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>博客列表</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/blog-list.css">
+    </head>
+    
+    <body>
+    	<!-- header -->
+    	<div class="page-header">
+		  <h3 class="">博客列表</h3>
+		</div>
+
+		<!-- content -->
+    	 <div class="container">
+    	 	<div class="row">
+    	 		<div class="col-md-12">
+    	 			<div class="media">
+					  <div class="media-left media-middle">
+					    <a href="#">
+					      <img class="media-object hn-photo" src="../images/1.jpg" alt="">
+					    </a>
+					  </div>
+					  <div class="media-body">
+					    <h4 class="media-heading">js判断当前网络状态</h4>
+					    W3C的规范中给出了一个方法来获得现在的网络状态navigator.connection；根据Working Draft 29 November 2012协议规范我们可以从接口中获得bandwidth（带宽，M/s）和metered两个参数的值；还提供了一个监听方法，来时刻监听接入环境的变化情况。现实中我们发现很多浏览器并没有返回bandwidth值，而且遵守了Working Draft 07 June 2011的协议返回给我们type（类型，wifi/2g/3g/4g）。
+					  </div>
+					</div>
+
+
+					<div class="list-group">
+					  <a href="#" class="list-group-item active">
+					    疯狂的HTML压缩
+					  </a>
+					  <a href="#" class="list-group-item"><span class="badge">hot</span>程序员如何规划下一年</a>
+					  <a href="#" class="list-group-item">h5中文学习网</a>
+					  <a href="#" class="list-group-item">HTML5浏览器和特性检测</a>
+					  <a href="#" class="list-group-item"><span class="badge">new</span>HTML5手机列表模板</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- footer -->
+		<nav>
+	      <ul class="pagination">
+	        <li class="disabled"><a aria-label="Previous" href="#"><span aria-hidden="true">«</span></a></li>
+	        <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+	        <li><a href="#">2</a></li>
+	        <li><a href="#">3</a></li>
+	        <li><a href="#">4</a></li>
+	        <li><a href="#">5</a></li>
+	        <li><a aria-label="Next" href="#"><span aria-hidden="true">»</span></a></li>
+	     </ul>
+	   </nav>
+    </body>
+</html>
