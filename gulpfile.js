@@ -1,6 +1,9 @@
 var gulp = require('gulp'),
 	less = require('gulp-less'),
 	watch = require('gulp-watch'),
+	imagemin = require('gulp-imagemin'),//压缩图片
+	htmlmin = require('gulp-htmlmin'),//压缩Html
+	minifycss = require('gulp-minify-css'),//压缩css文件
 	uglify = require('gulp-uglify');//压缩js文件
 
 	// less->css
@@ -47,11 +50,18 @@ var gulp = require('gulp'),
 //         }))
 // 	.pipe(gulp.dest('./build/js'))
 // })
-
+//执行js压缩任务
 gulp.task('jsmin', function () {
     gulp.src('./js/*')
     	.pipe(uglify())
     	.pipe(gulp.dest('./build/js'));
 });
 
- gulp.task('default',['jsmin']);
+//执行css压缩任务
+gulp.task('cssmin', function () {
+    gulp.src('./css/*')
+    	.pipe(minifycss())
+    	.pipe(gulp.dest('./build/css'));
+});
+
+gulp.task('default',['jsmin','cssmin']);
